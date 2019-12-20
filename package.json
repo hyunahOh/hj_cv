@@ -1,0 +1,26 @@
+{
+  "name": "hyeonjin",
+  "version": "1.0.0",
+  "description": "Hyeonjin Kim's portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humonnom/hyeonjin.git"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "humonnom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/humonnom/hyeonjin/issues"
+  },
+  "homepage": "https://github.com/humonnom/hyeonjin#readme",
+  "devDependencies": {
+    "postcss": "^7.0.25",
+    "precss": "^4.0.0",
+    "sass": "^1.23.7"
+  }
+}
