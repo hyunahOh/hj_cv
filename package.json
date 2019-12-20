@@ -1,26 +1,44 @@
 {
   "name": "hyeonjin",
   "version": "1.0.0",
-  "description": "Hyeonjin Kim's portfolio",
+  "description": "Hyeonjin's portfolio",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "postcss": "^7.0.25",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "pug": "^2.0.4",
+    "webpack": "^4.41.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "css-loader": "^3.4.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.23.7"
+  },
+  "scripts": {
+    "start": "parcel src/views/index.pug",
+    "open": "parcel src/views/index.pug --open 'google chrome'"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/humonnom/hyeonjin.git"
   },
-  "scripts": {
-    "start": "parcel index.html"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "humonnom",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/humonnom/hyeonjin/issues"
   },
-  "homepage": "https://github.com/humonnom/hyeonjin#readme",
-  "devDependencies": {
-    "postcss": "^7.0.25",
-    "precss": "^4.0.0",
-    "sass": "^1.23.7"
-  }
+  "homepage": "https://github.com/humonnom/hyeonjin#readme"
 }
