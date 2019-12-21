@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        link(rel="icon", type="image/png", href="https://kit.fontawesome.com/ef982121f7.js")
+        script(src="https://kit.fontawesome.com/ef982121f7.js", crossorigin="anonymous")
+        title #{siteName} | #{pageTitle}
+        link(rel="stylesheet", href="/static/styles.css")
+    body 
+        include ../partials/header
+        main 
+            block content
+        include ../partials/footer
+        script(src="/static/main.js")

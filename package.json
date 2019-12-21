@@ -2,34 +2,38 @@
   "name": "hyeonjin",
   "version": "1.0.0",
   "description": "Hyeonjin's portfolio",
-  "main": "index.js",
   "dependencies": {
+    "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/node": "^7.7.7",
     "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.7.7",
+    "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
-    "body-parser": "^1.19.0",
+    "css-loader": "^3.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.13.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
     "postcss": "^7.0.25",
     "postcss-loader": "^3.0.0",
-    "precss": "^4.0.0",
     "pug": "^2.0.4",
-    "webpack": "^4.41.4"
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
-    "css-loader": "^3.4.0",
-    "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.13.0",
-    "postcss-cli": "^6.1.3",
-    "postcss-preset-env": "^6.7.0",
-    "sass": "^1.23.7"
+    "nodemon": "^2.0.2"
   },
   "scripts": {
-    "start": "parcel src/views/index.pug",
-    "open": "parcel src/views/index.pug --open 'google chrome'"
+    "dev:server": "nodemon --exec babel-node init.js --delay 2",
+    "dev:assets": "WEBPACK_ENV=development webpack -w",
+    "build:assets": "WEBPACK_ENV=production webpack"
   },
   "repository": {
     "type": "git",
