@@ -1,2 +1,11 @@
-$basic: #f4f4f4;
-$black: #444444;
+:root {
+  --basic: #f5f5f5;
+  --black: #444444;
+  --grey: rgba(0, 0, 0, 0.1);
+  --bordercolor: 1px solid red;
+  --borderblack: 2px solid var(--black);
+  --borderblackthin: 1px solid var(--black);
+  --bordergrey: 2px solid var(--grey);
+  --fontA: Verdana, Geneva, Tahoma, sans-serif;
+  --fontM: "Muli", sans-serif;
+}

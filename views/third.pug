@@ -1,0 +1,53 @@
+extends layouts/main
+
+block content
+        .content
+            section.slideshow-container
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/2e0b5459f0bdea84622f73cb9a016b5f/7902d95c94dd0501-97/s1280x1920/a5bbad971cfe75a6d8585b7d0d2d05ac3a3e21c5.jpg")
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/6030211b03eaf76012390f9b9b0f8c8a/7902d95c94dd0501-cd/s540x810/32c1ed70c1477e431ba279bcd8df2a085a9011ea.jpg")
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/e5bfbafdab1ba2f565f27a2a6144a427/7902d95c94dd0501-79/s540x810/e0c3580ef4026fd44fd551ca9da4587dd6a311bb.jpg")
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/3fc3e0afb90a632e7eba1175f13a4a99/7902d95c94dd0501-82/s1280x1920/2f1462606c75388b703635e23b1fd315cf84e32c.jpg")
+                a.prev(onclick="plusSlides(-1)")
+                a.next(onclick="plusSlides(1)")
+
+        .captions
+            span.caption__title #{first} <br/> polystyrene, fabric <br/> 120*100*100(cm) <br/> 150*70*70(cm) <br/> 100*60*60(cm) <br/> 170*80*80(cm) <br/> 2019
+        
+        script.
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+            
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }

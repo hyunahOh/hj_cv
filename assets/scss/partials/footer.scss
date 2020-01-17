@@ -1,0 +1,23 @@
+.footer {
+  color: var(--black);
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: var(--bordergrey);
+  text-transform: uppercase;
+  .footer-icon {
+    font-size: 23px;
+    margin-bottom: 10px;
+    span:nth-child(2) {
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+  .footer-area {
+    margin-bottom: 2px;
+  }
+}

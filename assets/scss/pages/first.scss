@@ -1,0 +1,157 @@
+main {
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+  grid-auto-rows: 30px;
+  grid-gap: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  overflow-wrap: hidden;
+  .content {
+    display: grid;
+    grid-area: span 5 / span 3;
+    .slideshow-container {
+      display: block;
+      position: relative;
+      margin: auto;
+      background-color: &basic;
+      .slideshow-container img {
+        display: block;
+        margin: 5px auto;
+      }
+      .object-fit-cover {
+        height: auto;
+        width: 1200px;
+        object-fit: scale-down;
+      }
+    }
+  }
+  .captions {
+    display: grid;
+    grid-area: span 1 / span 1;
+    span {
+      display: block;
+      font-size: 20px;
+      line-height: normal;
+      margin: 0;
+    }
+  }
+}
+
+.slides {
+  display: none;
+  img {
+    vertical-align: middle;
+  }
+}
+
+.prev,
+.next {
+  position: absolute;
+  color: white;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 0px 0px 2px black;
+  padding-top: 10px;
+}
+
+.prev {
+  padding-left: 15px;
+  cursor: w-resize;
+}
+
+.next {
+  right: 0;
+  text-align: right;
+  padding-right: 15px;
+  cursor: e-resize;
+}
+
+@media (min-device-width: 501px) and (max-device-width: 5120px) {
+  @media (min-width: 1051px) and (max-width: 5120px) {
+    main {
+      .content {
+        .slideshow-container {
+          .object-fit-cover {
+            height: 75vh;
+            width: auto;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 701px) and (max-width: 1050px) {
+    main {
+      grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+      grid-auto-rows: 30px;
+      grid-gap: 10px;
+      .content {
+        grid-area: span 3 / span 3;
+        .slideshow-container {
+          .object-fit-cover {
+            height: 70vh;
+            width: 100vw;
+            object-fit: scale-down;
+          }
+        }
+      }
+      .captions {
+        display: grid;
+        grid-area: span 1 / span 1;
+      }
+    }
+  }
+  @media (min-width: 0px) and (max-width: 700px) {
+    main {
+      grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+      grid-auto-rows: 30px;
+      grid-gap: 10px;
+      .content {
+        grid-area: span 3 / span 3;
+        .slideshow-container {
+          .object-fit-cover {
+            height: 70vh;
+            width: 100vw;
+            object-fit: scale-down;
+          }
+        }
+      }
+      .captions {
+        display: grid;
+        grid-area: span 1 / span 1;
+      }
+    }
+  }
+}
+
+@media (max-device-width: 500px) {
+  main {
+    grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+    grid-auto-rows: 15px;
+    grid-gap: 10px;
+    .content {
+      margin: 20px;
+      padding: 20px;
+      grid-area: span 4 / span 3;
+      .slideshow-container {
+        .object-fit-cover {
+          height: 60vh;
+          width: 80vw;
+          object-fit: scale-down;
+        }
+      }
+    }
+    .captions {
+      display: grid;
+      grid-area: span 2 / span 3;
+      span {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

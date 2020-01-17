@@ -1,3 +1,41 @@
+html,
 body {
-  background-color: red;
+  height: 100%;
+}
+body {
+  background-color: var(--basic);
+  font-family: var(--fontM);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+@media (min-device-width: 501px) and (max-device-width: 5120px) {
+  body {
+    padding: 20px;
+  }
+  @media (min-width: 1051px) and (max-width: 5120px) {
+  }
+  @media (min-width: 701px) and (max-width: 1050px) {
+    body {
+      padding: 40px;
+    }
+  }
+  @media (min-width: 0px) and (max-width: 700px) {
+    body {
+      padding: 50px;
+    }
+  }
+}
+
+@media (max-device-width: 500px) {
+  body {
+    padding: 30px;
+  }
 }
