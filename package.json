@@ -36,10 +36,10 @@
     "dev:server": "nodemon --exec babel-node init.js --delay 2",
     "dev:assets": "WEBPACK_ENV=development webpack -w",
     "build:assets": "WEBPACK_ENV=production webpack",
-    "build": "yarn build:server && yarn build:assets",
+    "build": "npm run build:server && npm run build:assets",
     "prebuild": "rm -rf build",
-    "start":"node build/init.js",
-    "prestart": "yarn build"
+    "start": "node build/init.js",
+    "prestart": "npm run build"
   },
   "repository": {
     "type": "git",
