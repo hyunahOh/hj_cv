@@ -4,50 +4,27 @@ block content
         .content
             section.slideshow-container
                 .mySlides(class="slides")
-                    img.object-fit-cover(src="https://66.media.tumblr.com/2e0b5459f0bdea84622f73cb9a016b5f/7902d95c94dd0501-97/s1280x1920/a5bbad971cfe75a6d8585b7d0d2d05ac3a3e21c5.jpg")
-
+                    img.object-fit-cover(src="https://66.media.tumblr.com/d669da87547b3a2f1a7d51c556601001/815767ee1b125c8a-1d/s1280x1920/26af6324c2e87f332fd4f05458b74c2f4e560675.jpg")
                 .mySlides(class="slides")
-                    img.object-fit-cover(src="https://66.media.tumblr.com/6030211b03eaf76012390f9b9b0f8c8a/7902d95c94dd0501-cd/s540x810/32c1ed70c1477e431ba279bcd8df2a085a9011ea.jpg")
-
+                    img.object-fit-cover(src="https://66.media.tumblr.com/a16596e914be2745ae4d37dcf5202ed3/815767ee1b125c8a-29/s1280x1920/76e275b2dcc90a06321864640f209e393041d287.jpg")
                 .mySlides(class="slides")
-                    img.object-fit-cover(src="https://66.media.tumblr.com/e5bfbafdab1ba2f565f27a2a6144a427/7902d95c94dd0501-79/s540x810/e0c3580ef4026fd44fd551ca9da4587dd6a311bb.jpg")
-
+                    img.object-fit-cover(src="https://66.media.tumblr.com/dfceffbad1346b641f3035ca6f3b620e/815767ee1b125c8a-0d/s1280x1920/e72c2e3e06ae463da0cfa3f650b378913e8da9fc.jpg")
                 .mySlides(class="slides")
-                    img.object-fit-cover(src="https://66.media.tumblr.com/3fc3e0afb90a632e7eba1175f13a4a99/7902d95c94dd0501-82/s1280x1920/2f1462606c75388b703635e23b1fd315cf84e32c.jpg")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/9cf75bd3e381ec79baee42045d0a27a4/815767ee1b125c8a-ea/s1280x1920/58805e62970ae00d97ed50711c17f38059fe38e7.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/acaf38f6a59f2fc674a2cb490bf9191d/815767ee1b125c8a-77/s1280x1920/13e9916d80340512ec4aa482839b2d940bf4e7e7.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/69ed4c2d2f714a72cd7f0195f137b3b5/815767ee1b125c8a-95/s1280x1920/872278360314bd43993e09b05c8db222cafcb73c.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/ed6641adc206e2f1ff284b732451d0fa/815767ee1b125c8a-62/s1280x1920/a15169081ade496a24a8b152a334c0488485efb7.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/57178b5e8dbed49cf23becfa9e0bffb6/815767ee1b125c8a-71/s1280x1920/9cb8daf05c45611ffc623c569f17a66991b03908.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/cec6b30e05586e253996136170dec032/815767ee1b125c8a-d0/s1280x1920/2702c508a7e523810aea8ad3534a4233057d69d6.jpg")
                 a.prev(onclick="plusSlides(-1)")
                 a.next(onclick="plusSlides(1)")
 
         .captions
-            span.caption__title #{first} <br/> polystyrene, fabric <br/> 120*100*100(cm) <br/> 150*70*70(cm) <br/> 100*60*60(cm) <br/> 170*80*80(cm) <br/> 2019
-        
-        script.
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides((slideIndex += n));
-            }
-            
-            function currentSlide(n) {
-              showSlides((slideIndex = n));
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {
-                slideIndex = 1;
-              }
-              if (n < 1) {
-                slideIndex = slides.length;
-              }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-            }
+            span.caption__title #{second} 
+            span.caption__text fabric, plywood 
+            span.caption__number 200*200*250(cm) <br/> 2019

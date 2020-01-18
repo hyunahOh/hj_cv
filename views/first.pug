@@ -18,36 +18,6 @@ block content
                 a.next(onclick="plusSlides(1)")
 
         .captions
-            span.caption__title #{first} <br/> polystyrene, fabric <br/> 120*100*100(cm) <br/> 150*70*70(cm) <br/> 100*60*60(cm) <br/> 170*80*80(cm) <br/> 2019
-        
-        script.
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides((slideIndex += n));
-            }
-            
-            function currentSlide(n) {
-              showSlides((slideIndex = n));
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {
-                slideIndex = 1;
-              }
-              if (n < 1) {
-                slideIndex = slides.length;
-              }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-            }
+            span.caption__title #{first} 
+            span.caption__text polystyrene, fabric 
+            span.caption__number 120*100*100(cm) <br/> 150*70*70(cm) <br/> 100*60*60(cm) <br/> 170*80*80(cm) <br/> 2019

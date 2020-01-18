@@ -30,9 +30,22 @@ main {
     grid-area: span 1 / span 1;
     span {
       display: block;
-      font-size: 20px;
-      line-height: normal;
+      line-height: 22px;
       margin: 0;
+    }
+    .caption__title,
+    .caption__text {
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+    .caption__title {
+      margin-top: 17px;
+      font-weight: 600;
+    }
+    .caption__text {
+    }
+    .caption__number {
+      font-size: 14px;
     }
   }
 }

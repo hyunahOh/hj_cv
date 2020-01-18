@@ -1,17 +1,24 @@
-.contact-column-wrapper
-        .contact-main
-            h5 #{siteName}
-        .contact-column
-            h5 #{area}
-        .contact-social
-            span 
-                i(class="fas fa-envelope-square")
-                h5 #{email}
-            span
-                a(href="https://www.instagram.com/hyunujinu/?hl=ko") 
+extends layouts/main
+    
+block content
+    .contact-wrapper
+            .contact-main
+                h5 #{siteName}
+            .constact-genre
+                h5 #{genre}
+            .contact-area
+                h5 South korea, #{area}
+    .contact-wrapper           
+            .icons
+                div.contact-icon
+                    i(class="fas fa-envelope-square") 
+                    h5 email
+                    h5 | wlskhj@icloud.com
+                a.contact-icon(href="https://www.instagram.com/hyunujinu/?hl=ko") 
                     i(class="fab fa-instagram")
-                    h5 instagram
-            span
-                a(href="https://www.tumblr.com/dashboard/blog/hyunujinu") 
-                    i(class="fab fa-tumblr-square")
-                    h5 tumblr
+                    span Instagram
+                a.contact-icon(href="https://www.tumblr.com/blog/hyunujinu") 
+                    i(class="fab fa-tumblr-square") 
+                    span Tumblr
+    .contact-wrapper       
+        .contact-copyright #{siteName} #{new Date().getFullYear()} &copy;

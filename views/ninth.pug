@@ -1,0 +1,19 @@
+extends layouts/main
+
+block content
+        .content
+            section.slideshow-container
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/2fab0f0e74ab5a033b5e945762b47478/040c34fced204d14-d8/s1280x1920/32224550e4e812b4e99bccaee3b084d3e6710cca.png")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/ba6547309a02385284a3bc7611f181c7/040c34fced204d14-a1/s1280x1920/24ece4483123e8dbdfee2d8579a3df563059a71c.png")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/8c0879be19846739ccd94d28e1116e73/040c34fced204d14-91/s1280x1920/fa7050f20eb6e629758b76369092acefd844ee2a.jpg")
+                
+                a.prev(onclick="plusSlides(-1)")
+                a.next(onclick="plusSlides(1)")
+
+        .captions
+            span.caption__title #{ninth} 
+            span.caption__text fabric, wood 
+            span.caption__number 156*75(cm) <br/> 2016

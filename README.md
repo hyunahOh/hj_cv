@@ -4,20 +4,11 @@ Hyeonjin's portfolio
 
 ## memo
 
-app.set("view engine", "pug");
-app.set("views", "./views");
-
-app.use(routes.home, router);
-app.use(routes.first, router);
-app.use(routes.second, router);
-app.use(routes.third, router);
-app.use(routes.fourth, router);
-app.use(routes.fifth, router);
-app.use(routes.sixth, router);
-app.use(routes.seventh, router);
-app.use(routes.eighth, router);
-app.use(routes.ninth, router);
-app.use(routes.tenth, router);
-app.use(routes.eleventh, router);
-
-export default app;
+- [x] 각 페이지 제목 넣기
+- [x] 작품정보 넣기
+- [x] 사진 넣기
+- [x] 메인 사진 넣기
+- [x] 제목 바꾸기
+- [x] fifth 작동 안되는 문제
+- [x] 최종 작동 확인
+- [] 배포

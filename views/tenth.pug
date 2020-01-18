@@ -1,0 +1,25 @@
+extends layouts/main
+
+block content
+        .content
+            section.slideshow-container
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/02b5b34c8c358f5b26ee325a18dfc5fc/59876a1be93074d8-7d/s1280x1920/56b1cba7df917538c12182505ef4f55bff57e7f4.jpg")
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/b0bdd47be6e0c313fe6eca105bba4602/59876a1be93074d8-f5/s1280x1920/962795a71ce32329ef5e60186a4a683cac2d6dc3.jpg")
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/324ffa40c1c47f40d2aa446fba9861e9/59876a1be93074d8-4a/s1280x1920/c5ec87a7dd39a55a6c0ecb1723ff13c34e3a9b5b.jpg")
+
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/18b25a470b8682d7710e06207a966c3f/59876a1be93074d8-7c/s1280x1920/7cfea9ad1c12af97bdd29e0b4f1d4e1e449799e3.jpg")
+                
+                a.prev(onclick="plusSlides(-1)")
+                a.next(onclick="plusSlides(1)")
+
+        .captions
+            span.caption__title #{tenth} 
+            span.caption__text collage 
+            span.caption__number 65*53(cm) <br/> 2016

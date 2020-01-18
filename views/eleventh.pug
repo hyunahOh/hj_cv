@@ -1,0 +1,18 @@
+extends layouts/main
+
+block content
+        .content
+            section.slideshow-container
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/b3833d5e052aa202a21c5a7db0c793f8/f4c35d399c45f847-da/s540x810/ad6caa9b2ae17ddcf248e09eb7a06c5eb48b49b8.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/7452ae31339aa2aa298ee0883f0af97a/f4c35d399c45f847-24/s1280x1920/8a5ede00441da1fdc6664e79aa8668d3177386b0.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/c2b6aed1de8621c5a49564ea7dd6cbee/f4c35d399c45f847-82/s1280x1920/af34e1fa4d2d5483ef3f254e50c2382303f88130.jpg")
+                a.prev(onclick="plusSlides(-1)")
+                a.next(onclick="plusSlides(1)")
+
+        .captions
+            span.caption__title #{eleventh} 
+            span.caption__text twist tie, wood 
+            span.caption__number 42*38*22(cm) <br/> 2015

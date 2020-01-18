@@ -23,8 +23,9 @@ main {
         display: block;
         position: fixed;
         z-index: 100;
-        iframe {
-          border: var(--borderblackthin);
+        img {
+          width: 600px;
+          height: auto;
         }
       }
     }
@@ -33,6 +34,25 @@ main {
 
 @media (min-device-width: 501px) and (max-device-width: 5120px) {
   @media (min-width: 1051px) and (max-width: 5120px) {
+    body {
+      margin-top: 40px;
+    }
+    main {
+      .project-wrapper {
+        margin-top: 40px;
+
+        li:hover {
+          span {
+            position: absolute;
+            left: 43vw;
+            top: 38vh;
+            img {
+              transform: scale(1.4);
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 701px) and (max-width: 1050px) {
     main {
@@ -51,11 +71,9 @@ main {
           }
           span {
             position: absolute;
-            left: 10vw;
-            top: 1vh;
-            iframe {
-              width: 1000px;
-              height: 700px;
+            left: 27vw;
+            top: 17vh;
+            img {
               transform: scale(0.5);
             }
           }

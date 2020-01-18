@@ -1,14 +1,14 @@
 extends layouts/main
 
 block content
-    .content-detail
-        .caption
-            h6.title #{fifth}
-            h6  
+        .content
+            section.slideshow-container
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/5ebc86e0bd572234d531d689ddc60189/2fb007392bed656c-d4/s1280x1920/199d678514d896d873ffe90400d3671d5301df40.jpg")
+                a.prev(onclick="plusSlides(-1)")
+                a.next(onclick="plusSlides(1)")
 
-
-
-        .slideshow-container
-            .mySlides
-                img.object-fit-cover(src="")
-            
+        .captions
+            span.caption__title #{fifth} 
+            span.caption__text pencil on canvas 
+            span.caption__number 59.4*84.1(cm) <br/> 2019

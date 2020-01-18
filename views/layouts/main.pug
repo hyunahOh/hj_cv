@@ -3,11 +3,45 @@ html
     head
         link(rel="icon", type="image/png", href="https://kit.fontawesome.com/ef982121f7.js")
         script(src="https://kit.fontawesome.com/ef982121f7.js", crossorigin="anonymous")
-        title #{siteName} | #{pageTitle}
+        title #{siteName} | Portfolio
         link(rel="stylesheet", href="/static/styles.css")
     body 
         include ../partials/header
         main 
             block content
         include ../partials/footer
+        script.
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides((slideIndex += n));
+            }
+
+            function currentSlide(n) {
+              showSlides((slideIndex = n));
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+
+            var iframe = window.getElementsByTagName("iframe")[0];
+            alert("Frame title: " + iframe.contentWindow.title);
         script(src="/static/main.js")       

@@ -1,14 +1,16 @@
 extends layouts/main
 
 block content
-    .content-detail
-        .caption
-            h6.title #{fourth}
-            h6  
+        .content
+            section.slideshow-container
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/e93599227e72f4b0a84bb28379411581/f1c086a0fc4808ce-ab/s1280x1920/388685685a1e3b5b79fd87f03bdb6a221b8d6d61.jpg")
+                .mySlides(class="slides")
+                    img.object-fit-cover(src="https://66.media.tumblr.com/4e6ca7630bdfc586fabb5c14c5eaabd2/f1c086a0fc4808ce-40/s1280x1920/67069f364300f8ea949dc783c4af62127a944e56.jpg")
+                a.prev(onclick="plusSlides(-1)")
+                a.next(onclick="plusSlides(1)")
 
-
-
-        .slideshow-container
-            .mySlides
-                img.object-fit-cover(src="")
-            
+        .captions
+            span.caption__title #{fourth} 
+            span.caption__text urethane <br/> dimension variable 
+            span.caption__number 2019
