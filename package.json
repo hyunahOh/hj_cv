@@ -30,6 +30,7 @@
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "nodemon": "^2.0.2"
   },
   "scripts": {
@@ -40,8 +41,7 @@
     "copyAll": "copy -R src/static build && copy -R src/views build",
     "build": "npm run build:server && npm run build:assets && copyAll",
     "prebuild": "rm -rf build",
-    "start": "node build/init.js",
-    "prestart": "npm run build"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -52,5 +52,5 @@
   "bugs": {
     "url": "https://github.com/humonnom/hyeonjin/issues"
   },
-  "homepage": "https://github.com/humonnom/hyeonjin#readme"
+  "homepage": "https://hyunahoh.github.io/hj_cv/"
 }
